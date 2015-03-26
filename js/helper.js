@@ -50,6 +50,7 @@ var HTMLschoolDegree = ' -- %data%</a>';
 var HTMLschoolDates = '<div class="date-text">%data%</div>';
 var HTMLschoolLocation = '<div class="location-text">%data%</div>';
 var HTMLschoolMajor = '<em><br>Major: %data%</em>';
+var HTMLschoolURL = '<br><a href="#">%data%</a>';
 
 var HTMLonlineClasses = '<h3>Online Classes</h3>';
 var HTMLonlineTitle = '<a href="#">%data%';
@@ -67,7 +68,7 @@ The International Name challenge in Lesson 2 where you'll create a function that
 $(document).ready(function() {
   $('button').click(function() {
     var iName = inName() || function(){};
-    $('#name').html(iName);  
+    $('#name').html(iName);
   });
 });
 
@@ -88,7 +89,7 @@ function logClicks(x,y) {
 
 $(document).click(function(loc) {
   // your code goes here!
-  //logClicks(loc.pageX, loc.pageY)
+  logClicks(loc.pageX, loc.pageY)
 });
 
 
